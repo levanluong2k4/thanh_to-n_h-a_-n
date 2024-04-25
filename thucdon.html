@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thucdon</title>
+    <link rel="stylesheet" href="thanhtoan.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto+Condensed:wght@900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    
+    <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,300;1,400;1,500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="hoahon.js">
+</head>
+<body>
+    <head>
+        <div class="logo">
+            <img src="./img/winmart+.png" alt="">
+          
+        
+        
+        
+        </div>
+        <div class="headone">
+            <ul class="head1">
+           
+                <li class="li1" onclick="movetrangchu()"><a href="#">Trang chủ</a></li>
+                <li class="danhmuc"><a href="#">Danh mục</a> </li>
+                <li class="info"> <a href="#">Thông tin</a></li>
+                <li class="thucdon"onclick="movethucdon"><a href="#">Thực Đơn</a></li>
+            
+                <div class="head2">
+                    <img src="./img/winmart+.png" alt="">
+                  
+                </div>
+                
+                <div class="head3">
+                    <i class="fa-solid fa-cart-shopping" style="color: #db5224;"></i>
+                    <p style="font-size: small;">Giỏ hàng</p>
+                </div>
+
+            </ul>
+         
+        </div>
+
+    </head>
+    <div class="main_menu">
+        
+     
+            
+            <div class="dspill">
+                <h2 >Hóa Đơn</h2>
+                <table>
+                    
+                        <thead>
+                            <tr>
+                                <th id="namedrink">Tên món</th>
+                                <th id>Gía</th>
+                                <th>S.L</th>
+                                <th>T.Tiền</th>
+
+                            </tr>
+                           
+                        </thead>
+                        <tbody>
+                           <tr style="text-align: center;" id="nodrink">
+                            <td colspan="4" class="nomenu"> Vui lòng chọn thực đơn</td>
+                           </tr> 
+                        </tbody>
+                   
+
+
+                </table>
+                
+            </div>
+
+
+       
+        <div class="menu_food">
+            <section class="drink">
+                <div class="menu_drink"><h2>Đồ uống</h2></div>
+            <div class="boderdrink drink1"><img src="./img/Milo_22Oz-e1678701061716.png" alt="">
+                <div class="chitiet1">
+                    <h3 id="name1">Milo sữa</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="size">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">105 đã bán</p>
+                    <div class="money">
+                        <p>20.000đ</p>
+                        <del>35.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru1"></i>
+                        <input type="number" id="input1"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong1"></i>
+                    </div>
+                    
+                </div>
+            
+            
+            </div>
+            <div class="boderdrink drink2"><img src="./img/PhaPhin-Sua-tuoi-1-e1678700684175.png" alt="">
+                <div class="chitiet1">
+                    <h3 id="name2">Sữa Tươi Cà Phê</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">1000 đã bán</p>
+                    <div class="money">
+                        <p>25.000đ</p>
+                        <del>40.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru2"></i>
+                        <input type="number" id="input2"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong2"></i>
+                    </div>
+                    
+                </div>
+            
+            
+            
+            </div>
+            <div class="boderdrink drink3"><img src="./img/Tra-Dao-2-e1678701113118.png" alt="">
+                <div class="chitiet1">
+                    <h3 id="name3">Trà Đào</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">115 đã bán</p>
+                    <div class="money">
+                        <p>15.000đ</p>
+                        <del>30.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru3"></i>
+                        <input type="number" id="input3"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong3"></i>
+                    </div>
+                    
+                </div>
+            
+            </div>
+            <div class="boderdrink drink4"><img src="./img/TRA-SUA-THAI-DO.png" alt="">
+                <div class="chitiet1">
+                    <h3 id="name4">Cà Phê Sữa</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">100 đã bán</p>
+                    <div class="money">
+                        <p>25.000đ</p>
+                        <del>35.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru4"></i>
+                        <input type="number" id="input4" placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong4"></i>
+                    </div>
+                    
+                </div>
+            
+
+
+            </div>
+            <div class="boderdrink drink5"><img src="./img/TRA-SUA-THAI-XANH.png" alt="">
+                <div class="chitiet1">
+                    <h3 id="name5">Trà Sữa Thái</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">105 đã bán</p>
+                    <div class="money">
+                        <p id="money5">40.000đ</p>
+                        <del>50.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru5"></i>
+                        <input type="number"id="input5"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong5"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="boderdrink drink6"><img src="./img/PhaPhin-Den-Da-1-e1678700403820.png" alt="">
+                <div class="chitiet1">
+                    <h3 id="name6">Cà Phê Đá</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">105 đã bán</p>
+                    <div class="money">
+                        <p id="money6">40.000đ</p>
+                        <del>50.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru6"></i>
+                        <input type="number" id="input6"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong6"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="boderdrink drink7"><img src="./img/hightland/270_crop_3P_COMBO_Tea_Berry.jpg" alt="">
+                <div class="chitiet1">
+                    <h3 id="name7">Trà Sữa Dâu</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">105 đã bán</p>
+                    <div class="money">
+                        <p id="money7">40.000đ</p>
+                        <del>50.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru7"></i>
+                        <input type="number" id="input7"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong7"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="boderdrink drink7"><img src="./img/hightland/270_crop_HLC_New_logo_5.1_Products__TRA_TACH_VAI.jpg" alt="">
+                <div class="chitiet1">
+                    <h3 id="name8">Trà Sữa Thạch</h3>
+                    <div class="size">
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">105 đã bán</p>
+                    <div class="money">
+                        <p id="money8">40.000đ</p>
+                        <del>50.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru8"></i>
+                        <input type="number" id="input8"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong8"></i>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="boderdrink drink5"><img src="./img/hightland/270_crop_HLC_New_logo_5.1_Products__TRA_THANH_DAO-09 (1).jpg" alt="">
+                <div class="chitiet1">
+                    <h3 id="name9">Trà Sữa Mít</h3>
+                    <div class="size" >
+                    <P>Size:</P>
+                    <select name="size" id="">
+                        <option value="M">M</option>
+                        <option value="l">L</option>
+                        <option value="XL">XL</option>
+
+
+                    </select>
+                    
+                    </div>
+                    <p style="font-size: small; opacity: 0.5;">105 đã bán</p>
+                    <div class="money">
+                        <p class="money9">40.000đ</p>
+                        <del>50.000đ</del>
+
+                    </div>
+                  
+                    <div class="inputsl">
+                        <i class="fa-solid fa-minus" id="tru9"></i>
+                        <input type="number"id="input9"placeholder="0" min="0">
+                        <i class="fa-solid fa-plus" id="cong9"></i>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+
+
+        </div>
+
+
+    </div>
+    <div class="sum">
+        <p>tổng thanh toán </p>
+        <p style="color: red;"><ins>đ</ins></p>
+        <p style="color: red;" id="tongtien">0</p>
+    <button type="button" id="oke">
+     
+        Xác Nhận
+
+    </button>
+
+    </div>
+
+<script src="hoahon.js"></script>
+</body>
+</html>
